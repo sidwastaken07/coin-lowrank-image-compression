@@ -33,19 +33,17 @@ actually overlap (required for BD-rate to be valid) took fixing that axis,
 flooring sigma at half a quantiser bin so the rate term can't claim weights are
 free, coding every parameter including biases, and refusing to compute BD-rate
 at all when curves lack genuine shared support. Full account of what broke and
-what fixed it is in the notebook's changelog cell.
+what fixed it, by version, is in [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Notebook
 
 [`coin_lowrank_kodak_eval.ipynb`](coin_lowrank_kodak_eval.ipynb) — self-contained,
 resumable across free-tier Kaggle sessions (checkpoints to disk, merges prior
 session output, stops cleanly on a time budget). Run All; no inputs to paste,
-the rate axis is calibrated automatically per session.
-
-Caveats disclosed in the notebook itself: results are at 256px (not directly
-comparable to published 768×512 Kodak numbers), divergent runs are retried and
-flagged rather than silently dropped, and the entropy model is a simple
-per-tensor factorised Gaussian — a context model would compress further.
+the rate axis is calibrated automatically per session. Setup and resume steps
+are in [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md), which also lists the
+disclosed limitations (evaluation resolution, entropy model, the oracle
+post-filter).
 
 Research internship, NIT Calicut. Under review, *IEEE Signal Processing
-Letters*.
+Letters* — see [`CITATION.cff`](CITATION.cff).

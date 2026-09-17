@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Entropy-Constrained Low-Rank COIN"
+type: software
+authors:
+  - family-names: "S"
+    given-names: "Siddharth"
+    orcid: "https://orcid.org/0009-0009-2692-0917"
+date-released: "2026-09-17"
+url: "https://github.com/sidwastaken07/coin-lowrank-image-compression"
+repository-code: "https://github.com/sidwastaken07/coin-lowrank-image-compression"
+license: MIT
+abstract: >
+  Low-rank factorised SIREN image codec with a learned entropy model shared
+  directly with the range coder, evaluated against a full-rank
+  entropy-constrained COIN baseline on all 24 Kodak images. Companion code
+  for a manuscript under review at IEEE Signal Processing Letters; citation
+  details will be added on acceptance.
+keywords:
+  - image compression
+  - implicit neural representations
+  - entropy coding
+  - low-rank factorisation
+  - rate-distortion optimization
